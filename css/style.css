@@ -1,0 +1,59 @@
+.sidenav{
+    height: 100%;
+    width: 200px;
+    background-color: black;
+    position: fixed;
+    background-color: #111;
+    overflow-x: hidden;
+    z-index: 1;
+}
+.sidenav a{
+    margin-top: 50px;
+    margin-left: 20px;
+    display: block;
+    color: silver;
+    text-decoration: none;
+}
+.sidenav a:hover{
+    color: white;
+}
+.sidenav img{
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    width: 150px;
+}
+
+.main{
+    margin-left: 200px;
+}
+#info{
+    width: 600px;
+    height: 480px;
+    margin: 0 auto;
+    /*background-color: aqua;*/
+    text-align: center;
+}
+#top{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    /*background-color: blueviolet;*/
+}
+#top img{
+    
+    margin-top: 50px;
+}
+#info h4{
+    font-family: "Sofia", sans-serif;
+    font-weight: lighter;
+}
+#info h2{
+    font: 2vw/1 Permanent Marker;
+}
+hr.new{
+    border-top: 1px dashed red;
+}
+.tint:before {
+    background: rgba(0, 0, 255, 0.5);
+  }
