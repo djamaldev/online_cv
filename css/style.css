@@ -1,3 +1,6 @@
+body{
+    background-color: black;
+}
 .sidenav{
     height: 100%;
     width: 200px;
@@ -29,19 +32,18 @@
 }
 #info{
     width: 600px;
-    height: 480px;
+    
     margin: 0 auto;
-    /*background-color: aqua;*/
+    
     text-align: center;
 }
 #top{
     width: 800px;
     margin: 0 auto;
     display: flex;
-    /*background-color: blueviolet;*/
-}
-#top img{
     
+}
+#top img{  
     margin-top: 50px;
 }
 #info h4{
@@ -51,9 +53,47 @@
 #info h2{
     font: 2vw/1 Permanent Marker;
 }
+#work{
+    
+    margin: 0 auto;
+    text-align: center;
+}
+#work h4{
+    font-family: "Sofia", sans-serif;
+    font-weight: lighter;
+}
+#work img{
+    margin: 0 auto;
+    height: 250px;
+    width: 150px;
+}
+#activity{
+    
+    margin: 0 auto;
+    text-align: center;
+}
+#activity h4{
+    font-family: "Sofia", sans-serif;
+    font-weight: lighter;
+}
 hr.new{
     border-top: 1px dashed red;
 }
 .tint:before {
     background: rgba(0, 0, 255, 0.5);
   }
+  .main:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+h1, h2, h4, a, p{
+    color: #ddd;
+}
