@@ -3,9 +3,10 @@
     <head>
         <link rel="stylesheet" href="css/style.css">
         <script src="js/scripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="sidenav">
@@ -13,10 +14,10 @@
             <a href="#info">About</a>
             <a href="#work">Work</a>
             <a href="#activity">Activities</a>
-            <a href="#">Contact</a>
+            <a href="#footer">Contact</a>
         </div>
         <div class="main">
-            <img src="images/man.jpg" id="man">
+            <img src="images/Man.png" id="man">
             <div id="top">
                 <div id="info">
                     <img src="images/hello-black.jpg" style="width: 100px; height: 100px; margin-top: 10px;">
@@ -148,15 +149,21 @@
                     <a href="http://github.com/djamaldev/">Others work</a>
                 </h4>
             </div>
-            <hr class="new">
-            <div id="activity">
-                <h4>
-                    <p>
-                        I'm a developer, so I know how to create your website and apps to run across devices using the latest technologies available.
-                        <br><br>
-                        I love designing websites and keep things as simple as possible. My goals is to focus on minimalism and conveying the message that you want to send.
-                    </p>
-                </h4>
+            
+            <div id="activity" class="overlay">
+                <img src="images/man.jpg">
+                <div class="popup">
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <h4 class="p-content">
+                            <p class="p-content">
+                                I'm a developer, so I know how to create your website and apps to run across devices using the latest technologies available.
+                                <br><br>
+                                I love designing websites and keep things as simple as possible. My goals is to focus on minimalism and conveying the message that you want to send.
+                            </p>
+                        </h4>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer">
@@ -175,7 +182,7 @@
                 <i class="fa fa-linkedin" style="color: teal; font-size: 40px; margin-left: 40px;"></i>
             </a>
             <div></div>
-            <i class='fa fa-copyright' style="margin-top: 20px;">Yacine Djamal</i>
+            <i class='fa fa-copyright' style="margin-top: 20px;">Yacine Djamal 2022</i>
         </div>
     </body>
 </html>

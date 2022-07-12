@@ -6,7 +6,6 @@ body{
     width: 200px;
     background-color: black;
     position: fixed;
-    background-color: #111;
     overflow-x: hidden;
     z-index: 1;
 }
@@ -23,7 +22,6 @@ body{
 .sidenav img{
     margin-top: 20px;
     margin-left: 20px;
-    
     width: 150px;
 }
 
@@ -31,11 +29,11 @@ body{
     justify-content: center;
 }
 #info{
-    width: 600px;
+    width: 1000px;
     height: 70%;
     margin: 0 auto;
     text-align: center;
-    transform: translateY(150px);
+    transform: translateY(100px);
     opacity: 0;
     transition: 1s all ease;
 }
@@ -44,8 +42,7 @@ body{
     opacity: 1;
   }
 #top{
-    background-color: blue;
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
 }
 #top img{  
@@ -66,7 +63,7 @@ body{
     animation-iteration-count: inherit;
 }
 #info p{
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-name: glissement;
   animation-iteration-count: inherit;
 }
@@ -88,7 +85,6 @@ body{
     transform: translateY(150px);
     opacity: 0;
     transition: 1s all ease;
-    background-color: red;
 }
 #work.active{
     transform: translateY(0);
@@ -107,13 +103,65 @@ body{
 #activity{
     margin: 0 auto;
     text-align: center;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
+    width: 800px;
+    height: 400px;
+    visibility: hidden;
 }
-#activity.active{
-    transform: translateX(0);
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
     opacity: 1;
+  }
+  #activity:target{
+    visibility: visible;
+    margin-top: 100px;
+  }
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 35px;
+    /*width: 30%;*/
+    position: relative;
+    transition: all 1s ease;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #111;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+  }
+  .popup .close:hover {
+    color: hsl(352, 95%, 44%);
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  .p-content{
+    font-family: "Sofia", sans-serif;
+    font-size: large;
+    color: black;
   }
 #activity h4{
     font-family: "Sofia", sans-serif;
@@ -132,17 +180,47 @@ hr.new{
 }
 .footer{
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
     padding: 20px;
     background: #ddd;
+    opacity: 0;
+    transition: 1s all ease;
 }
+.footer div{
+    margin-top: 100px;
+}
+.footer.active{
+    height: 400px;
+    align-items: center;
+    transform: translateY(0);
+    opacity: 1;
+  }
 h1, h2, h4, a, p{
     color: #ddd;
 }
 #man{
-    width: 150px;
-    margin-left: 300px;
+    width: 200px;
+    height: 350px;
+    margin-left: 200px;
     margin-top: 100px;
     position: fixed;
+    animation: fadeIn 3s infinite;
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @media only screen and (max-width: 620px) {
+    .sidenav {
+      height: 80px;
+      width: 100%;
+    }
+    .sidenav a{
+        display: inline;
+    }
+    .sidenav img{
+        height: 80px;
+    }
+  }
