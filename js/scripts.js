@@ -29,8 +29,8 @@ function reveal_work() {
       }
     }
   }
-  function reveal_activity() {
-    var reveals = document.querySelectorAll(".footer");
+  function reveal_contact() {
+    var reveals = document.querySelectorAll("#contact");
   
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -47,7 +47,7 @@ function reveal_work() {
   
   window.addEventListener("scroll", reveal_work);
   window.addEventListener("scroll", reveal_info);
-  window.addEventListener("scroll", reveal_activity);
+  window.addEventListener("scroll", reveal_contact);
 
   $(document).scroll(function(){
     var scroll = $(window).scrollTop();

@@ -190,13 +190,14 @@ hr.new{
     transition: 1s all ease;
 }
 .footer div{
-    margin-top: 100px;
+    margin-top: 20px;
+    height: 5px;
 }
 .footer i{
   color: #fff;
 }
 .footer.active{
-    height: 350px;
+    height: 160px;
     align-items: center;
     transform: translateY(0);
     opacity: 1;
@@ -206,8 +207,9 @@ h1, h2, h4, a, p{
     color: #ddd;
 }
 #man{
+  color: black;
     width: 200px;
-    height: 350px;
+    height: 500px;
     margin-left: 200px;
     margin-top: 100px;
     position: fixed;
@@ -218,7 +220,7 @@ h1, h2, h4, a, p{
     100% { opacity: 1; }
   }
 
-  @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .sidenav {
       width: 100%;
       height: 60px;
@@ -277,9 +279,75 @@ h1, h2, h4, a, p{
     color: black;
   }
   .footer.active{
-    height: 100px;
+    height: 120px;
   }
   .footer div{
     margin-top: 20px;
+  }
+  }
+
+  @media screen and (max-width: 800px) {
+    .sidenav {
+      width: 100%;
+      height: 60px;
+      position: fixed;
+    }
+    .sidenav a{
+      margin-top: 0;
+      display: inline-block;
+    }
+    .sidenav img{
+      height: 50px;
+      width: 50px;
+      margin-left: 5px;
+      margin-top: 0px;
+    }
+    #top{
+      width: 300px;
+      display: block;
+    }
+    #top img{  
+      margin-top: 100px;
+  }
+    #info{
+      width: 300px;
+    }
+    #info h4{
+      font-size: 16px;
+    }
+    #info h2{
+      font-size: 20px;
+    }
+    #work{
+      width: 300px;
+    }
+    #man{
+      width: 40px;
+      height: 120px;
+      margin-left: 0px;
+  }
+  #activity{
+    width: 100%;
+  }
+  .overlay img{
+    height: 120px;
+  }
+  .popup{
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .popup .close{
+    top: 0px;
+  }
+  .p-content{
+    font-weight: bold;
+    font-size: 10px;
+    color: black;
+  }
+  .footer.active{
+    height: 160px;
+  }
+  .footer div{
+    margin-top: 10px;
   }
   }
