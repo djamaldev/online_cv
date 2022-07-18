@@ -107,7 +107,14 @@ body{
     text-align: center;
     width: 800px;
     height: 400px;
-    visibility: hidden;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+    background-color: blue;
+}
+#activity.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 .overlay {
     position: fixed;
@@ -163,7 +170,7 @@ body{
   .p-content{
     font-family: "Sofia", sans-serif;
     font-size: large;
-    color: black;
+    color: white;
   }
 #activity h4{
     font-family: "Sofia", sans-serif;
@@ -210,8 +217,8 @@ h1, h2, h4, a, p{
   color: black;
     width: 200px;
     height: 500px;
-    margin-left: 200px;
-    margin-top: 100px;
+    margin-left: 0px;
+    margin-top: 50px;
     position: fixed;
     animation: fadeIn 3s infinite;
 }
@@ -245,6 +252,11 @@ h1, h2, h4, a, p{
   }
     #info{
       width: 300px;
+    }
+    #info img{
+      margin-top: 20px;
+      width: 100px;
+      height: 100px;
     }
     #info h4{
       font-size: 16px;
@@ -311,6 +323,11 @@ h1, h2, h4, a, p{
   }
     #info{
       width: 300px;
+    }
+    #info img{
+      margin-top: 20px;
+      width: 60px;
+      height: 60px;
     }
     #info h4{
       font-size: 16px;
