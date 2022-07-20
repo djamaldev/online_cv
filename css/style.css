@@ -172,6 +172,12 @@ body{
     color: white;
   }
 #activity h4{
+    color: #fff;
+    font-family: "Sofia", sans-serif;
+    font-weight: lighter;
+}
+#activity p{
+    color: #fff;
     font-family: "Sofia", sans-serif;
     font-weight: lighter;
 }
